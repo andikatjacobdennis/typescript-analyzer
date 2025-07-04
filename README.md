@@ -1,6 +1,6 @@
 # TypeScript Analyzer
 
-**TypeScript Analyzer** is a C# tool that extracts and analyzes structural elements from TypeScript source code — including functions, class methods, arrow functions, and more. It is designed for static code analysis, documentation generation, or code transformation tools.
+**TypeScript Analyzer** is a C# tool that extracts and analyzes structural elements from TypeScript source code — including functions, class methods, arrow functions, interfaces, enums, and more. It’s built for static code analysis, documentation generation, or code transformation tooling.
 
 ## Features
 
@@ -8,15 +8,18 @@
 - Supports `async`, generator (`*`), and arrow functions
 - Captures full method bodies and parameter lists
 - Groups methods by class name
-- Written in C# – fast and easy to integrate
-- Future-proof for support of:
-  - Interfaces, enums, types
-  - Decorators and comments
-  - Import/export declarations
+- Written in C# – fast and cross-platform
 
-## Installation
+### Planned Enhancements
 
-Clone the repository and build the project:
+- [x] Extract interfaces, enums, type aliases
+- [ ] Parse decorators and comments
+- [ ] Detect import/export declarations
+- [ ] Export results to JSON/Markdown
+- [ ] Add CLI argument/file support
+- [ ] Build a web-based UI viewer
+
+## 🛠 Installation
 
 ```bash
 git clone https://github.com/andikatjacobdennis/typescript-analyzer.git
@@ -26,71 +29,66 @@ dotnet build
 
 ## Usage
 
-Place a `.ts` file in the project folder (or specify a path), then run:
-
-```bash
-dotnet run --project TypeScriptAnalyzer.csproj
-```
-
-Edit `Program.cs` to point to your TypeScript file:
+1. Place your `.ts` file (e.g., `sample.ts`) inside the project directory.
+2. Update the file path inside `Program.cs`:
 
 ```csharp
 string filePath = "sample.ts";
+```
+
+3. Run the analyzer:
+
+```bash
+dotnet run --project typescript-analyzer.csproj
 ```
 
 ## Sample Output
 
 ```
 === Global Functions ===
-Name: outside
-Params: (msg: string)
+Name: sayHello
+Params: (name: string)
 ReturnType: void
-...
+Code:
+function sayHello(name: string): void {
+    console.log("Hello, " + name);
+}-----------------------
 
 === Class Methods === Class: Calculator ---
 Name: add
 Params: (a: number, b: number)
 ReturnType: number
-...
+Code:
+add(a: number, b: number): number {
+    return a + b;
+}-----------------------
 ```
 
 ## Project Structure
 
 ```
 typescript-analyzer/
-├── sample.ts               # Sample TypeScript input file
-├── Program.cs              # Main analyzer logic
-├── README.md               # You're here!
-└── ...
+├── .gitignore
+├── LICENSE
+├── README.md
+└── typescript-analyzer/
+    ├── Program.cs                # Main analyzer logic
+    ├── sample.ts                 # Example TypeScript input file
+    └── typescript-analyzer.csproj
 ```
-
-## Roadmap
-
-- [ ] Extract interfaces, enums, types
-- [ ] Parse decorators and comments
-- [ ] Export results to JSON or markdown
-- [ ] Add CLI argument support
-- [ ] Build a web-based UI
 
 ## Contributing
 
 Pull requests, issues, and suggestions are welcome!
 
-To contribute:
-
-1. Fork this repo
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
-
 ## License
 
-MIT License. See [LICENSE](LICENSE) for more information.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Built by [Andikat Jacob Dennis](https://github.com/andikatjacobdennis).
+Built by [Andikat Jacob Dennis](https://github.com/andikatjacobdennis)
 
-## Star this repo
+## Show your support
 
-If you find this project useful, please give it a star on GitHub! It helps others find it too.
+If you find this project useful, please star the repo — it helps others discover it too!
