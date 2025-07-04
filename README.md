@@ -1,13 +1,7 @@
-Here's a complete `README.md` template for your `typescript-analyzer` GitHub repo:
-
----
-
-````markdown
 # TypeScript Analyzer
 
 **TypeScript Analyzer** is a C# tool that extracts and analyzes structural elements from TypeScript source code — including functions, class methods, arrow functions, and more. It is designed for static code analysis, documentation generation, or code transformation tools.
 
----
 
 ## 🔍 Features
 
@@ -21,7 +15,6 @@ Here's a complete `README.md` template for your `typescript-analyzer` GitHub rep
   - Decorators and comments
   - Import/export declarations
 
----
 
 ## 📦 Installation
 
@@ -33,7 +26,6 @@ cd typescript-analyzer
 dotnet build
 ````
 
----
 
 ## 🚀 Usage
 
@@ -49,7 +41,6 @@ Edit `Program.cs` to point to your TypeScript file:
 string filePath = "sample.ts";
 ```
 
----
 
 ## 📄 Sample Output
 
@@ -60,15 +51,13 @@ Params: (msg: string)
 ReturnType: void
 ...
 
-=== Class Methods ===
---- Class: Calculator ---
+=== Class Methods === Class: Calculator ---
 Name: add
 Params: (a: number, b: number)
 ReturnType: number
 ...
 ```
 
----
 
 ## 📁 Project Structure
 
@@ -81,7 +70,6 @@ typescript-analyzer/
 └── ...
 ```
 
----
 
 ## 🛠 Roadmap
 
@@ -91,7 +79,6 @@ typescript-analyzer/
 * [ ] Add CLI argument support
 * [ ] Build a web-based UI
 
----
 
 ## 🤝 Contributing
 
@@ -104,31 +91,20 @@ To contribute:
 3. Make your changes
 4. Submit a pull request
 
----
 
 ## 📄 License
 
 MIT License. See [LICENSE](LICENSE) for more information.
 
----
 
 ## 👨‍💻 Author
 
-Built by [Your Name](https://github.com/your-username) — C# enthusiast & TypeScript tamer.
+Built by [Your Name](https://github.com/andikatjacobdennis) — C# enthusiast & TypeScript tamer.
 
----
 
 ## 🌟 Star this repo
 
 If you find this project useful, please give it a ⭐️ on GitHub! It helps others find it too.
-
-```
-
----
-
-Let me know if you want:
-- The same in a more minimalist style
-- A version with badges (build status, license, etc.)
 - GitHub Actions setup for testing or CI
 
 Ready to paste into your repo!
