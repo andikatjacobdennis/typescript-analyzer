@@ -60,7 +60,6 @@ ReturnType: number
 typescript-analyzer/
 ├── sample.ts               # Sample TypeScript input file
 ├── Program.cs              # Main analyzer logic
-├── TsFunction.cs           # Function data model
 ├── README.md               # You're here!
 └── ...
 ```
