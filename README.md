@@ -2,21 +2,19 @@
 
 **TypeScript Analyzer** is a C# tool that extracts and analyzes structural elements from TypeScript source code — including functions, class methods, arrow functions, and more. It is designed for static code analysis, documentation generation, or code transformation tools.
 
+## Features
 
-## 🔍 Features
-
-- ✅ Extracts global and class-based functions
-- ✅ Supports `async`, generator (`*`), and arrow functions
-- ✅ Captures full method bodies and parameter lists
-- ✅ Groups methods by class name
-- ✅ Written in C# – fast and easy to integrate
-- 🧠 Future-proof for support of:
+- Extracts global and class-based functions
+- Supports `async`, generator (`*`), and arrow functions
+- Captures full method bodies and parameter lists
+- Groups methods by class name
+- Written in C# – fast and easy to integrate
+- Future-proof for support of:
   - Interfaces, enums, types
   - Decorators and comments
   - Import/export declarations
 
-
-## 📦 Installation
+## Installation
 
 Clone the repository and build the project:
 
@@ -24,10 +22,9 @@ Clone the repository and build the project:
 git clone https://github.com/your-username/typescript-analyzer.git
 cd typescript-analyzer
 dotnet build
-````
+```
 
-
-## 🚀 Usage
+## Usage
 
 Place a `.ts` file in the project folder (or specify a path), then run:
 
@@ -41,8 +38,7 @@ Edit `Program.cs` to point to your TypeScript file:
 string filePath = "sample.ts";
 ```
 
-
-## 📄 Sample Output
+## Sample Output
 
 ```
 === Global Functions ===
@@ -58,8 +54,7 @@ ReturnType: number
 ...
 ```
 
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 typescript-analyzer/
@@ -70,17 +65,15 @@ typescript-analyzer/
 └── ...
 ```
 
+## Roadmap
 
-## 🛠 Roadmap
+- [ ] Extract interfaces, enums, types
+- [ ] Parse decorators and comments
+- [ ] Export results to JSON or markdown
+- [ ] Add CLI argument support
+- [ ] Build a web-based UI
 
-* [ ] Extract interfaces, enums, types
-* [ ] Parse decorators and comments
-* [ ] Export results to JSON or markdown
-* [ ] Add CLI argument support
-* [ ] Build a web-based UI
-
-
-## 🤝 Contributing
+## Contributing
 
 Pull requests, issues, and suggestions are welcome!
 
@@ -91,21 +84,14 @@ To contribute:
 3. Make your changes
 4. Submit a pull request
 
-
-## 📄 License
+## License
 
 MIT License. See [LICENSE](LICENSE) for more information.
 
-
-## 👨‍💻 Author
+## Author
 
 Built by [Andikat Jacob Dennis](https://github.com/andikatjacobdennis).
 
+## Star this repo
 
-## 🌟 Star this repo
-
-If you find this project useful, please give it a ⭐️ on GitHub! It helps others find it too.
-- GitHub Actions setup for testing or CI
-
-Ready to paste into your repo!
-```
+If you find this project useful, please give it a star on GitHub! It helps others find it too.
