@@ -19,7 +19,7 @@
 Clone the repository and build the project:
 
 ```bash
-git clone https://github.com/your-username/typescript-analyzer.git
+git clone https://github.com/andikatjacobdennis/typescript-analyzer.git
 cd typescript-analyzer
 dotnet build
 ```
