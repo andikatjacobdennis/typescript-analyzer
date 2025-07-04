@@ -99,7 +99,7 @@ MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 👨‍💻 Author
 
-Built by [Your Name](https://github.com/andikatjacobdennis) — C# enthusiast & TypeScript tamer.
+Built by [Andikat Jacob Dennis](https://github.com/andikatjacobdennis).
 
 
 ## 🌟 Star this repo
